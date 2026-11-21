@@ -9,7 +9,7 @@ Streamlit assistant with optional multi-model answer fusion and 3D Studio.
 4. Run `streamlit run "VihAI maximum.py"`.
 
 ## Models
-- Qwen3-32B defaults to `qwen/qwen3-32b` on Groq.
+- Qwen3-32B defaults to `qwen/qwen3.8-27b` on Groq.
 - `QWEN27_MODEL` and `NEMOTRON_MODEL` are intentionally blank: **verify exact IDs and availability with Groq and NVIDIA** before setting them. The requested names may not exist as stated.
 - All configured models run in parallel; a successful model synthesizes one answer. Failed models are skipped if another succeeds. Each request may use multiple billable API calls.
 - Nemotron uses NVIDIA's OpenAI-compatible endpoint. Speech transcription always uses Groq.
