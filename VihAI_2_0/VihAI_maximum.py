@@ -83,7 +83,7 @@ def ask(prompt, instruction='You are VihAI, a helpful assistant.', context=''):
     messages = [{'role': 'system', 'content': system}] + past + [{'role': 'user', 'content': user_content}]
     candidates = []
     if groq_client:
-        candidates.append(('Qwen3-32B', groq_client, qwen32_id))
+        candidates.append(('Qwen3.8-27B', groq_client, qwen32_id))
         if qwen27_id.strip():
             candidates.append(('Qwen 27B', groq_client, qwen27_id.strip()))
     if nvidia_client and nemotron_id.strip():
