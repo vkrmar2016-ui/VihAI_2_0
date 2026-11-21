@@ -38,7 +38,7 @@ def secret(name, default=''):
 groq_key = secret('GROQ_API_KEY') or st.sidebar.text_input('Groq API key', type='password')
 nvidia_key = secret('NVIDIA_API_KEY') or st.sidebar.text_input('NVIDIA API key (optional)', type='password')
 # Model IDs are configurable: check each provider's live model catalog.
-qwen32_id = secret('QWEN32_MODEL', 'qwen/qwen3-32b')
+qwen32_id = secret('QWEN32_MODEL', 'qwen/qwen3.8-27b')
 qwen27_id = secret('QWEN27_MODEL', '')
 nemotron_id = secret('NEMOTRON_MODEL', '')
 if not groq_key and not nvidia_key:
