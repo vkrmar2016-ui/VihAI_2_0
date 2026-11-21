@@ -1,0 +1,16 @@
+streamlit
+requests
+pandas
+plotly
+sympy
+pillow
+groq
+openai
+gtts
+pypdf
+python-docx
+ddgs
+numpy
+openpyxl
+trimesh
+scipy
